@@ -197,31 +197,5 @@ function Table() {
     Sourse()
     Img()
     Table()
-    // let ckecklist = Object.entries(checkList)
-    // for (key in ckecklist) {
-    //     let mass = ckecklist[key]
-    //     let title = mass[0]
-    //     let pages = mass[1].map(function(item) {
-    //         return item.name
-    //     });
-    //     // let checkbox = pages[2].map(function(item) {
-    //     //   return item.checked
-    //     // }); 
-    //     function rendPage (pages) {
-    //       for (key in pages) {
-    //         return pages[key]
-    //       }
-    //     }
-    //     let page = rendPage(pages)
-    //     document.querySelector('.Checksist_block').innerHTML += `
-    //         <ul id="cheklist_list" class="cheklist_list">
-    //             <h1>${title}</h1>
-    //             <li class="ckecklist_items">
-    //                 <p class="">${page}</p>
-    //                 <input type="checkbox checked="${pages}">
-    //             </li>
-    //         </ul>
-    //     `
-    // }
   }
   renderList()
