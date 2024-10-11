@@ -1,0 +1,81 @@
+:root {
+    --text-color: #fff;
+    --bg-color: #424141;
+    --bg-block-color: #2c2c2c;
+    --h1: 40px;
+    --h3: 32px;
+    --font-size: 20px;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    scrollbar-width: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--bg-block-color);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.header_title{
+    font-size: var(--h1);
+    color: var(--text-color);
+}
+
+.Checksist_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checklist_block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-block-color);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.checklist_text_check {
+    color: #04c42a;
+}
+
+
+.title_checklist {
+    font-size: var(--h3);
+    color: var(--text-color);
+}
+
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checklist_items {
+    display: flex;
+    gap: 10px;
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
