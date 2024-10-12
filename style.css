@@ -57,10 +57,17 @@ body {
     gap: 10px;
 }
 
-.checklist_text_check {
-    color: #04c42a;
+.checkbox:checked {
+    display: none;
+    background-color: #04c42a;
+}
+.checklist_text {
+    hyphens: manual;
 }
 
+.checklist_text_check {
+    background-color: #04c42a;
+}
 
 .title_checklist {
     font-size: var(--h3);
