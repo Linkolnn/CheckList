@@ -67,6 +67,8 @@ body {
 
 .checklist_text_check {
     background-color: #04c42a;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
 
