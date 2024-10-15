@@ -66,10 +66,10 @@ let checkList = {
     ]
   }
 
-function changeColor() {
-  let text = document.querySelector('.checklist_text');
-  text.className = "checklist_text_check";
-}
+// function changeColor() {
+//   let text = document.querySelector('.checklist_text');
+//   text.className = "checklist_text_check";
+// }
 
 function Page() {
   let checklist = checkList.Страница
