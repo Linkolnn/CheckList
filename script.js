@@ -66,19 +66,14 @@ let checkList = {
     ]
   }
 
-// function changeColor() {
-//   let text = document.querySelector('.checklist_text');
-//   text.className = "checklist_text_check";
-// }
-
 function Page() {
   let checklist = checkList.Страница
   for (key in checklist) {
     let name = checklist[key].name
     document.querySelector('.checklist_page').innerHTML += `
       <li class="checklist_items">
+          <input id="checkbox" class="checkbox" type="checkbox">
           <p id="text" class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
       </li>
 `
   }
@@ -90,8 +85,8 @@ function Title() {
     let name = checklist[key].name
     document.querySelector('.checklist_title').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -103,8 +98,8 @@ function Paragraph() {
     let name = checklist[key].name
     document.querySelector('.checklist_paragraph').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -116,8 +111,8 @@ function Content() {
     let name = checklist[key].name
     document.querySelector('.checklist_content').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -129,8 +124,8 @@ function Intro() {
     let name = checklist[key].name
     document.querySelector('.checklist_intro').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -142,8 +137,8 @@ function Conclusion() {
     let name = checklist[key].name
     document.querySelector('.checklist_conclusion').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -155,8 +150,8 @@ function Sourse() {
     let name = checklist[key].name
     document.querySelector('.checklist_sourse').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -168,8 +163,8 @@ function Img() {
     let name = checklist[key].name
     document.querySelector('.checklist_img').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
@@ -181,8 +176,8 @@ function Table() {
     let name = checklist[key].name
     document.querySelector('.checklist_table').innerHTML += `
       <li class="checklist_items">
-          <p class="checklist_text">${name}</p>
-          <input id="checkbox" class="checkbox" onchange="changeColor()" type="checkbox">
+          <input id="checkbox" class="checkbox" type="checkbox">
+          <p id="text" class="checklist_text">${name}</p>
       </li>
 `
   }
