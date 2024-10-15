@@ -57,10 +57,10 @@ body {
     gap: 10px;
 }
 
-.checkbox:checked {
+/* .checkbox:checked {
     display: none;
     background-color: #04c42a;
-}
+} */
 .checklist_text {
     hyphens: manual;
 }
