@@ -33,8 +33,11 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
-    padding: 0 20px 0 20px;
+   .header {
+       padding: 0 5px 0 5px;
+   }
+   .container {
+    padding: 0 5px 0 5px;
   }
 }
 
