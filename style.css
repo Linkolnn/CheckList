@@ -1,10 +1,12 @@
 :root {
     --text-color: #fff;
-    --bg-color: #424141;
-    --bg-block-color: #2c2c2c;
+    --bg-color: #111111;
+    --bg-block-color: #000000;
+    --radius: 20px;
     --h1: 40px;
     --h3: 32px;
     --font-size: 20px;
+    --gradient: #14A0FF, #9564FA, #FEA501, #FC6F3B, #FD1A5D, #fd1a38;
 }
 
 * {
@@ -31,6 +33,7 @@ body {
 }
 
 .header {
+    position: relative;
     background-color: var(--bg-block-color);
     padding: 20px;
     border-radius: 20px;
@@ -49,29 +52,65 @@ body {
 }
 
 .checklist_block {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: var(--bg-block-color);
     padding: 20px;
     border-radius: 20px;
     gap: 10px;
+    transition: 1s;
 }
 
-.checkbox:checked ~ .sd {
-    /* display: none; */
+.checklist_block::before, .checklist_block:after {
+    content: '';
     position: absolute;
-    background-color: #04c42a;
+    border-radius: var(--radius);
+    top: -0px;
+    right: -0px;
+    bottom: -0px;
+    left: -0px;
+    background: var(--bg-block-color);
+    z-index: -10;
+    transition: 1s;
+  }
+
+.checklist_block:hover:before, .checklist_block:hover:after {
+    content: '';
+    position: absolute;
+    border-radius: var(--radius);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background:  #18c767;
+    background-size: 300%;
+    z-index: -10;
+    transition: 1s;
+  }
+  
+.checklist_block:hover:after {
+    filter: blur(20px);
 }
+
+
 .checklist_text {
-    /* max-width: 600px; */
+    position: relative;
+    background-color: var(--bg-block-color);
     hyphens: manual;
 }
+.checklist_text:before, .checklist_text:after {
+    content: '';
+    position: absolute;
+    border-radius: var(--radius);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: #18c767;
+    z-index: -1;
+  }
 
-.checklist_text_check {
-    width: 20px;
-    height: 20px;
-    background-color: #04c42a;
-}
 
 .title_checklist {
     font-size: var(--h3);
@@ -79,6 +118,8 @@ body {
 }
 
 .checklist {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -94,7 +135,7 @@ body {
 }
 
 .checkbox:checked ~ .checklist_text {
-    background-color: #04c42a;
+    background-color: rgba(0, 0, 0, 0);
     padding: 5px 10px;
     border-radius: 20px;
 }
